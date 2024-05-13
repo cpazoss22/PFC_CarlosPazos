@@ -1,0 +1,45 @@
+/* Estilos generales */
+header {
+  background-color: black; /* Fondo transparente para la cabecera */
+  padding: 20px; /* Espaciado interno */
+}
+
+
+.enlaces ul {
+  display: flex; /* Establece la lista de enlaces como un flexbox */
+  list-style: none; /* Elimina los estilos de lista predeterminados */
+  padding: 0; /* Elimina el relleno predeterminado */
+  margin: 0; /* Elimina el margen predeterminado */
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.enlaces ul li a {
+  color: white; /* Color del texto de los enlaces */
+  text-decoration: none; /* Elimina la subrayado de los enlaces */
+}
+
+.enlaces ul li {
+  transition: all 300ms;
+}
+
+.enlaces ul li:hover {
+  transform: scale(1.2);
+}
+
+/* Estilos para los logotipos */
+.enlaces ul li img {
+  width: 100px; /* Ajusta el ancho del logotipo según sea necesario */
+  height: 100px; /* Mantiene la proporción del logotipo */
+  margin: 0px 100px 0px 0px;
+  border-radius: 50px;
+  transition: all 300ms;
+}
+
+.enlaces ul li .inicio img {
+  background-color: white;
+  margin: 0px 0px 0px 100px;
+  border-radius: 50px;
+  transition: all 300ms;
+}
