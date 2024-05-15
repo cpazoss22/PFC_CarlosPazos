@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Cuerpo {
+    position: relative;
+    background-image: url('./Cuerpo_inicio.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 140vh;
+    overflow: hidden;
+  }
+.Cuerpo_inicio img{
+    width: 50%;
+    animation-name: AIHUB;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: auto;
+}
+@keyframes AIHUB{
+    0% {
+        scale: 1;
+    }
+    50%{
+        scale: 1.4;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.Cuerpo_Slogan{
+    position: absolute;
+    color: aliceblue;
+    margin: auto;
+    top: 30%;
+    left: 43%;
+    animation-name: Slogan;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-family: fantasy;
+    font-size: 20px;
+    font-weight: 500;
+}
+@keyframes Slogan{
+    0% {
+        scale: 1;
+    }
+    50%{
+        scale: 1.4;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.Cuerpo_Enlace{
+    position: absolute;
+    color: aliceblue;
+    top: 37%;
+    left: 45%;
+    animation-name: Enlace;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-family: fantasy;
+    font-size: 20px;
+    font-weight: 500;
+    width: 150px;
+    height: 40px;
+    background-image: linear-gradient(45deg,#59FFCD 0%,#59FFCD 35%,#BAFF20 85%,#BAFF20 100%);
+    -webkit-text-fill-color: black;    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes Enlace{
+    0% {
+        scale: 1;
+    }
+    50%{
+        scale: 1.4;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.Link{
+    text-decoration: none;
+    color: black;
+}
+
+
+.Cuerpo_marquee {
+    position: absolute;
+    top:0px;
+    width: 100%;  
+    height: 90px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    overflow: hidden;
+  }
+  .Cuerpo_marquee2{
+    position: absolute;
+    top: 91.3%; 
+    width: 100%;  
+    height: 90px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    overflow: hidden;
+
+}
+.Cuerpo_marquee3{
+    position: absolute;
+    top: 50%; 
+    width: 100%;  
+    height: 90px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    overflow: hidden;
+
+}
+  
+  .Cuerpo_marquee li, .Cuerpo_marquee2 li , .Cuerpo_marquee3 li {
+    font-size: 50px;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  }
+  
+  .Cuerpo_marquee__content, .Cuerpo_marquee__content2, .Cuerpo_marquee__content3 {
+    display: flex;
+    list-style: none;
+    animation: scrolling 50s linear infinite;
+  }
+  
+  .Cuerpo_marquee__item, .Cuerpo_marquee__item2, .Cuerpo_marquee__item3 {
+    flex-shrink: 0;
+  }
+  
+  @keyframes scrolling {
+    0% { transform: translateX(0) }
+    100% { transform: translateX(-100%) }
+  }
+.Cuerpo_tarjetas{
+  background-color: black;
+}
+.Cuerpo_tarjeta_hilo1{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.Cuerpo_img_guerra img{
+  width: 90%;
+  height: 500px;
+  border-radius: 30px;
+  padding-top: 20px;
+  margin-top: 100px;
+}
+.Cuerpo_txt_guerra h1{
+  color: white;
+  margin-top: 120px;
+  font-family: fantasy;
+  font-size: 50px ;
+  margin-right: 20px;
+}
+.Cuerpo_txt_guerra p{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  margin-right: 20px;
+}
+.Cuerpo_txt_guerra p a{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  background-image: linear-gradient(45deg,#59FFCD 0%,#59FFCD 35%,#BAFF20 85%,#BAFF20 100%);
+  -webkit-text-fill-color: black;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+
+
+.Cuerpo_tarjeta_hilo2{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.Cuerpo_img_empleo img{
+  width: 90%;
+  height: 500px;
+  border-radius: 30px;
+  padding-top: 20px;
+  margin-top: 100px;
+}
+.Cuerpo_txt_empleo h1{
+  color: white;
+  margin-top: 140px;
+  font-family: fantasy;
+  font-size: 50px ;
+  margin-right: 20px;
+}
+.Cuerpo_txt_empleo p{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  margin-right: 20px;
+
+}
+.Cuerpo_txt_empleo p a{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  background-image: linear-gradient(45deg,#59FFCD 0%,#59FFCD 35%,#BAFF20 85%,#BAFF20 100%);
+  -webkit-text-fill-color: black;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.Cuerpo_tarjeta_hilo3{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.Cuerpo_img_humano img{
+  width: 90%;
+  height: 500px;
+  border-radius: 30px;
+  padding-top: 20px;
+  margin-top: 100px;
+}
+.Cuerpo_txt_humano h1{
+  color: white;
+  margin-top: 150px;
+  font-family: fantasy;
+  font-size: 50px ;
+  margin-right: 20px;
+}
+.Cuerpo_txt_humano p{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  margin-right: 20px;
+}
+.Cuerpo_txt_humano p a{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  background-image: linear-gradient(45deg,#59FFCD 0%,#59FFCD 35%,#BAFF20 85%,#BAFF20 100%);
+  -webkit-text-fill-color: black;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.Cuerpo_texto{
+  font-size: 20px;
+  font-family: fantasy;
+  color: white;
+  width: 70%;
+  margin: auto ;
+}
