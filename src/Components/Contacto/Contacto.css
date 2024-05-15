@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 1700px;
+  }
+  
+  .columna1 {
+    flex: 1; /* La primera columna ocupa todo el espacio disponible */
+    background-color: black; /* Color de fondo para la primera columna */
+    width: 50%;
+    height: 1000px;
+    color: aliceblue;
+  }
+  .columna1 img{
+    width: 70%;
+    height: 550px;
+    margin: 50px 0px 0px 0px;
+    border-radius: 30px;
+    animation-name: imagen_escala;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+  }
+  @keyframes imagen_escala {
+    0%{
+        transform:  scale(1);
+    }50%{
+        transform: scale(1.1);
+    }100%{
+        transform: scale(1);
+    }
+  }
+  
+  .columna2 {
+    flex: 1; /* La segunda columna ocupa todo el espacio disponible */
+    background-color: black; /* Color de fondo para la segunda columna */
+    width: 50%;
+    height: 1000px;
+    color: aliceblue;
+    
+}
+.columna2 .Correo, .Numero, .Mapeo{
+    border: 2px solid grey;
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg,#59FFCD 0%,#59FFCD 35%,#BAFF20 85%,#BAFF20 100%);
+    -webkit-text-fill-color: black;
+    font-size: 20px;
+    animation-name: columna2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes columna2 {
+    0%{
+        transform:  scale(1);
+    }50%{
+        transform: scale(1.2);
+    }100%{
+        transform: scale(1);
+    }
+    
+}
+.columna2 .Correo{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+}
+.columna2 .Numero{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+}
+.columna2 .Mapeo{
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    top: 80%;
+    left: 70%;
+}
+.MAPS{
+    background-color: grey;
+    position: absolute;
+    top: 1000px;
+    left: 400px;
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid;
+    border-image: linear-gradient(white, black) 1;
+}
+
+
+.marquee {
+    position: absolute;
+    top: 1700px;
+    width: 100%;  
+    height: 90px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    overflow: hidden;
+  }
+  .marquee2{
+    position: absolute;
+    top: 800px; 
+    width: 100%;  
+    height: 90px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    overflow: hidden;
+
+}
+  
+  .marquee li, .marquee2 li {
+    font-size: 50px;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  }
+  
+  .marquee__content, .marquee2__content {
+    display: flex;
+    list-style: none;
+    animation: scrolling 50s linear infinite;
+  }
+  
+  .marquee__item, .marquee2__item {
+    flex-shrink: 0;
+  }
+  
+  @keyframes scrolling {
+    0% { transform: translateX(0) }
+    100% { transform: translateX(-100%) }
+  }
