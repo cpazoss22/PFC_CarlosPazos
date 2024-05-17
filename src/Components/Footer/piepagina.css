@@ -1,0 +1,71 @@
+.piepagina{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: grey;
+}
+.footer_container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: black;
+    display: inline;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom: 1px solid grey;
+}
+.footer_columna1{
+    display: flex;
+    justify-content: center;
+}
+.footer_columna2{
+    width: 70%;
+    color: aliceblue;
+    display: grid;
+    grid-template-rows: 10% 10% 80%;
+    text-align: center;
+    padding-top: 30px;
+}
+.footer_columna1 img{
+    width: 100%;
+    height: 300px;
+}
+.footer_saludo{
+    background-image: linear-gradient(45deg,#59FFCD 0%,#59FFCD 35%,#BAFF20 85%,#BAFF20 100%);
+    -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+    color:#fff;
+    font-size: 14px;
+}
+.footer_correo{
+    font-size: 40px;
+    color: white;
+    transition: color 300ms;
+}
+.footer_correo:hover{
+    color: #BAFF20;
+}
+.footer_menu{
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style-type: none;
+    color: grey;
+}
+ul li a{
+    text-decoration: none;
+    display: inline;
+    color: aliceblue;
+}
+ul li{
+    padding: 5px;
+}
+.footer_final{
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid grey;
+    width: 100%;
+}
