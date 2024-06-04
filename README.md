@@ -14,18 +14,14 @@ El proyecto está programado para desarrollarse en **dos meses** (8 semanas) e i
    - Definir los requisitos del proyecto
    - Diseñar la interfaz de usuario y la arquitectura del sistema
 
-2. **Semana 3-4: Desarrollo del Backend**
-   - Implementar la base de datos y la lógica del servidor
-   - Configurar la autenticación y autorización de usuarios
-
-3. **Semana 5-6: Desarrollo del Frontend**
+2. **Semana 3-4: Desarrollo del Frontend**
    - Crear la interfaz de usuario con React
    - Integrar el frontend con el backend
 
-4. **Semana 7: Pruebas y Correcciones**
-   - Realizar pruebas de funcionalidad y usabilidad
-   - Corregir errores y optimizar el rendimiento
-
+3. **Semana 5-6-7: Desarrollo del Backend**
+   - Implementar la base de datos y la lógica del servidor
+   - Configurar la autenticación y autorización de usuarios
+     
 5. **Semana 8: Despliegue y Documentación**
    - Desplegar la aplicación en un servidor
    - Documentar el proyecto y los procesos de desarrollo
