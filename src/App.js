@@ -1,8 +1,8 @@
 import React from "react";
-import {  BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Comun from "./Components/Comun/Comun";
-import Cuerpo from "./Components/Cuerpo/Cuerpo"
+import Cuerpo from "./Components/Cuerpo/Cuerpo";
 import Contacto from "./Components/Contacto/Contacto";
 import Blog from "./Components/Blog/Blog";
 import Blog_Herramientas from "./Components/Blog_Herramientas/Blog_Herramientas";
@@ -16,29 +16,41 @@ import Equipo from "./Components/Equipo/Equipo";
 import Hilos from "./Components/Hilos/Hilos";
 import Registro from "./Components/Registro/Registro";
 import Login from "./Components/Log-in/Login";
+import CrearHilo from "./Components/Hilos_P/CrearHilo";
+import ListaHilos from "./Components/Hilos_P/ListaHilos";
+import Hilo from "./Components/Hilos_P/Hilo";
+import Usuarios from "./Components/Usuario/Usuarios";
+import UsuarioPerfil from "./Components/Usuario/UsuarioPerfil";
+import './Components/Usuario/Usuarios.css';
+import './Components/Usuario/UsuarioPerfil.css';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Routes>
-       <Route path="/" element={<Comun/>}>
-       <Route path='/'element={<Cuerpo/>}></Route>
-       <Route path="/Login" element={<Login/>}></Route>
-       <Route path="/Contacto" element={<Contacto/>}></Route>
-       <Route path="/Blog" element={<Blog/>}></Route>
-       <Route path="/Blog_Herramientas" element={<Blog_Herramientas/>}></Route>
-       <Route path="/Blog_AprendizajeAut" element={<Blog_AprendizajeAut/>}></Route>
-       <Route path="/Blog_Procesamiento" element={<Blog_Procesamiento/>}></Route>
-       <Route path="/Blog_Vision" element={<Blog_Vision/>}></Route>
-       <Route path="/Blog_Robotica" element={<Blog_Robotica/>}></Route>
-       <Route path="/Blog_Planificacion" element={<Blog_Planificacion/>}></Route>
-       <Route path="/Blog_Sistemas" element={<Blog_Sistemas/>}></Route>
-       <Route path="/Equipo" element={<Equipo/>}></Route>
-       <Route path="/Hilos" element={<Hilos/>}></Route>
-       <Route path="/Registro" element={<Registro/>}></Route>
-      </Route>
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Comun />}>
+            <Route path="/" element={<Cuerpo />} />
+            <Route path="/Login" element={<Login />} />
+            <Route path="/Contacto" element={<Contacto />} />
+            <Route path="/Blog" element={<Blog />} />
+            <Route path="/Blog_Herramientas" element={<Blog_Herramientas />} />
+            <Route path="/Blog_AprendizajeAut" element={<Blog_AprendizajeAut />} />
+            <Route path="/Blog_Procesamiento" element={<Blog_Procesamiento />} />
+            <Route path="/Blog_Vision" element={<Blog_Vision />} />
+            <Route path="/Blog_Robotica" element={<Blog_Robotica />} />
+            <Route path="/Blog_Planificacion" element={<Blog_Planificacion />} />
+            <Route path="/Blog_Sistemas" element={<Blog_Sistemas />} />
+            <Route path="/Equipo" element={<Equipo />} />
+            <Route path="/Hilos" element={<Hilos />} />
+            <Route path="/Registro" element={<Registro />} />
+            <Route path="/Crear_hilo" element={<CrearHilo />} />
+            <Route path="/ListaHilos" element={<ListaHilos />} />
+            <Route path="/Hilo/:threadId" element={<Hilo />} />
+            <Route path="/Usuarios" element={<Usuarios />} />
+            <Route path="/Usuario/:UsuarioId" element={<UsuarioPerfil />} />
+          </Route>
+        </Routes>
       </BrowserRouter>
     </div>
   );
