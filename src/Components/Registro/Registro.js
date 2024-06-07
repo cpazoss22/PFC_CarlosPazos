@@ -15,17 +15,15 @@ const [errorContraseña,setErrorContraseña] = useState('');
 const [errorEdad, setErrorEdad] = useState('');
 
 const mandarEnvio = (event) => {
-    event.preventDefault(); // Evita que la página se recargue al enviar el formulario
+    event.preventDefault();
     
   if (contraseña !== repetir) {
       setErrorContraseña('Las contraseñas no coinciden');
       return;
   }
 
-  // Limpiar el mensaje de error si las contraseñas coinciden
   setErrorContraseña('');
 
-    // Realizar acciones con los datos del formulario
     console.log('Nombre:', nombre);
     console.log('Apellidos:', apellidos); 
     console.log('Fechanac:', fechanac); 
