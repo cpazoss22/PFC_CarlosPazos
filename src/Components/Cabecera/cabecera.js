@@ -11,8 +11,8 @@ function Cabecera() {
         <ul>
           <li><Link to="/"><img src={logo}></img></Link></li>
           <li><Link to="/">Home</Link></li>
-          <li><a href="#">Usuarios</a></li>
-          <li><Link to="/Hilos">Hilos</Link></li>
+          <li><a href="/Usuarios">Usuarios</a></li>
+          <li><Link to="/Crear_Hilo">Hilos</Link></li>
           <li><Link to="/Equipo">Equipo</Link></li>
           <li><Link to="/Blog">Blog</Link></li>
           <li><Link to="/Contacto">Contacto</Link></li>
