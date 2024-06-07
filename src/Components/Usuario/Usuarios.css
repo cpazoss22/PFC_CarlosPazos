@@ -1,0 +1,44 @@
+.usuarios-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.usuarios-container h2 {
+  margin-bottom: 20px;
+}
+
+.usuarios-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.usuarios-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.usuario-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.usuario-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.usuario-item:hover {
+  background-color: #f1f1f1;
+}
+
+.usuario-item a:hover {
+  text-decoration: underline;
+}
